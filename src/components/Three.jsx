@@ -82,7 +82,7 @@ const Three = () => {
           </Box>
         </Box>
       </Box>
-      <Box borderLeft={"2px solid #4834fd"} padding={"0 1.5rem"} mt={3}>
+      <Box borderLeft={"2px solid #4834fd"} padding={"0 1.5rem"} mt={3} className="ltri">
         <Typography fontSize={"0.8rem"}>
           Are you considering a <br />
         </Typography>

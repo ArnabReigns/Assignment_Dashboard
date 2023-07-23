@@ -1,22 +1,29 @@
 import { Icon } from "@iconify/react";
-import { Avatar, Box, Button, Typography } from "@mui/material";
+import { Avatar, Badge, Box, Button, IconButton, Typography } from "@mui/material";
 import React from "react";
 
 const One = () => {
   return (
     <div className="one">
-      <div className="card">
-        <div className="header">
-          <Avatar sx={{}} className="avatar">
-            M
-          </Avatar>
-          <div>
-            <h1>Hi Mike,</h1>
-            <p>welcome back.</p>
-          </div>
-        </div>
+      <div className="floatnot">
+        <Badge variant="dot" color="primary">
+          <Icon icon="mingcute:notification-line" />
+        </Badge>
+      </div>
+
+      <div className="header">
+        <Avatar sx={{}} className="avatar">
+          M
+        </Avatar>
         <div>
-          <Box mt={5}>
+          <h1>Hi Mike,</h1>
+          <p>welcome back.</p>
+        </div>
+      </div>
+      <Box mt={5} />
+      <div className="card">
+        <div>
+          <Box>
             <Typography
               fontFamily={"Noto Serif"}
               fontWeight={600}
