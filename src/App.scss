@@ -1,0 +1,223 @@
+.app {
+  display: flex;
+  min-height: 100vh;
+  // gap: 2rem;s
+
+  @media (width <= 1140px) {
+    flex-direction: column;
+  }
+}
+
+.appbar {
+  background-color: white;
+  height: 100vh;
+  position: fixed;
+  padding: 1.5rem 0.8rem;
+  color: gray;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  z-index: 99;
+  justify-content: space-between;
+
+  @media (width <= 1140px) {
+
+    display: flex;
+
+  }
+
+  .top,
+  .mid,
+  .bottom {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  .top {
+    gap: 1.3rem;
+    margin-bottom: 3rem;
+  }
+
+  .mid {
+    margin-bottom: auto;
+    .tab {
+      width: 2.1rem;
+      aspect-ratio: 1;
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+    }
+    .active {
+      background-color: #4834fd;
+      color: white;
+      box-shadow: 0 2px 12px -1px #4834fdb8;
+    }
+    .search {
+      display: none;
+    }
+  }
+
+  .bottom 
+  {
+    margin-top: auto;
+
+    .tab 
+    {
+      cursor: pointer;
+    }
+  }
+
+  @media (width <= 1140px) {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    height: fit-content;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 0;
+    align-items: center;
+
+    .top,.bottom {
+      display: none;
+    }
+
+    .mid {
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 100%;
+
+      .search {
+        display: grid;
+      }
+    }
+  }
+}
+
+.one {
+  background-color: #fafafa;
+  padding: 3rem 2.5rem;
+  flex: 1;  
+  margin-left: 2rem;
+  
+  
+  @media (width <= 1140px) {
+    margin-left: 0;
+    background-color: transparent;
+    padding: 2rem;
+    .card 
+    {
+      background-color: #FAFAFA;
+      padding: 2rem 1rem;
+      border-radius: 8px;
+    }
+  }
+
+  .header {
+
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    
+    .avatar {
+      width: 4rem;
+      height: 4rem;
+      background-color: #4834fd;
+    }
+
+    h1 
+    {
+        font-size: 1.5rem;
+        font-weight: 800;
+        font-family: 'Noto Serif', serif;
+    }
+
+    p 
+    {
+        font-size: 0.75rem;
+    }
+  }
+
+  .onebtn 
+  {
+    background-color: #4834fd;
+    border: 0;
+    padding: 0.5rem 1rem;
+    color: white;
+    border-radius: 8px;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.8rem;
+    cursor: pointer;
+
+    svg
+     {
+      font-size: 1rem;
+     }
+  }
+
+}
+.two {
+  padding: 3rem 2.5rem;
+  flex: 1.5;
+}
+
+.three {
+  padding: 3rem 2.5rem;
+  flex: 1;
+  margin-bottom: 2rem;
+
+  .threeBtn
+  {
+    background-color: #4834fd;
+    width: 100%;
+    border: 0;
+    padding: 0.5rem 1rem;
+    color: white;
+    border-radius: 8px;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    justify-content: center;
+  }
+
+  .threeBtn2
+  {
+    border: 0;
+    background: transparent;
+    margin-top: 1rem;
+    text-align: center;
+    width: 100%;
+    color: #4834fd;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .threeBtn2sm 
+  {
+    border: 0;
+    background: transparent;
+    margin-top: 0.5rem;
+    padding: 0;
+    text-align: center;
+    color: #4834fd;
+    font-weight: 500;
+    font-size: 0.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+}
